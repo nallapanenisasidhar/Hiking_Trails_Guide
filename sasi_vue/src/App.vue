@@ -20,7 +20,7 @@
     },
     methods:{
       async getHikingList(){
-        const res = await fetch("http://localhost:1739/api");
+        const res = await fetch("https://hiking-trails-guide.onrender.com/api");
         const hikingData = await res.json();
         return hikingData[0].hiking;
       }
